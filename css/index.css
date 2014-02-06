@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+.image {
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #fff;
+	width: 511px;
+	height: 511px;
+	margin: 0 auto 40px;
+	background-repeat:no-repeat;
+	background-position:center; 
+			
+	transition:border 0.5s;
+	-webkit-transition:border 0.5s; /* Safari */
+}
+.image:hover {
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #4297ee;
+	width: 511px;
+	height: 511px;
+	margin: 0 auto 40px;
+	background-repeat:no-repeat;
+	background-position:center; 
+			
+	transition:border 0.5s;
+	-webkit-transition:border 0.5s; /* Safari */
+}
+.image1 {
+	position:absolute;
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #fff;
+	width: 400px;
+	height: 400px;
+	/*margin: 0 100px 100px 100px;*/
+	left:200px;
+	background-repeat:no-repeat;
+	background-position:center; 
+		
+	transition:border 0.5s;
+	-webkit-transition:border 0.5s; /* Safari */
+}
+.image1:hover {
+	position:absolute;
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #4297ee;
+	width: 400px;
+	height: 400px;
+	/*margin: 0 100px 100px 100px;*/
+	left:200px;
+	background-repeat:no-repeat;
+	background-position:center; 
+		
+	transition:border 0.5s;
+	-webkit-transition:border 0.5s; /* Safari */
+}
+.image2 {
+	position:absolute;
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #fff;
+	width: 400px;
+	height: 400px;
+	/*margin: 0 100px 100px 100px;*/
+	right:200px;
+	background-repeat:no-repeat;
+	background-position:center; 
+	
+	transition:border 0.5s;
+	-webkit-transition:border 0.5s; /* Safari */
+}
+.image2:hover {
+	position:absolute;
+	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
+	box-shadow: 0 0 18px rgba(0,0,0,.66);
+	border: solid 6px #4297ee;
+	width: 400px;
+	height: 400px;
+	/*margin: 0 100px 100px 100px;*/
+	right:200px;
+	background-repeat:no-repeat;
+	background-position:center; 
+}
+.imageText {
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	top: 460px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.4);
+}
+.imageText1 {
+	position: relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	top: 350px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.4);
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../images/bg.png);
+	margin: 80px 0px;
+	padding: 0px;
+	text-align: center;
+	background-attachment: fixed;
+}
+#topMenu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-image: url(../images/topMenuBg.jpg);
+	z-index: 1;
+}
+.imageNum {
+	display: inline-block;
+	color: #FFF;
+	font-size: 36px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.imageName {
+	display: inline-block;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 12px;
+}
+.smashing {
+	position: fixed;
+	z-index: 1;
+	top: 10px;
+	left: 200px;
+}
+.topProfile {
+	position: fixed;
+	top: 0px;
+	right: 200px;
+	height: 32px;
+	background-color: rgba(255,255,255,0.2);
+	padding: 5px;
+	z-index: 1;
+	transition:background-color 0.5s;
+	-webkit-transition:background-color 0.5s; /* Safari */
+}
+.topProfile:hover {
+	position: fixed;
+	top: 0px;
+	right: 200px;
+	height: 32px;
+	background-color: rgba(255,255,255,0.5);
+	padding: 5px;
+	z-index: 1;
+}
+.topProfileImage {
+	width: 35px;
+	height: 35px;
+	margin: 0 auto 40px;
+	float: left;
+}
+.topProfileName {
+	display: inline-block;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#glove{
+	width:89px;
+
+	transition:width 1s, height 1s;
+	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari */
+}
+
+#glove:hover{
+	width:110px;
+
+	transform:rotate(20deg);
+	-webkit-transform:rotate(20deg); /* Safari */
+}
+.logo{
+	height:42px
+}
+
