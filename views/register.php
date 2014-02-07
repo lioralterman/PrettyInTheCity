@@ -3,146 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Pretty In The City</title>
-<style>
-.image {
-	-webkit-box-shadow: 0 0 18px rgba(0,0,0,.66);
-	-moz-box-shadow: 0 0 18px rgba(0,0,0,.66);
-	box-shadow: 0 0 18px rgba(0,0,0,.66);
-	border: solid 6px #fff;
-	width: 511px;
-	height: 511px;
-	margin: 0 auto 40px;
-}
-.imageText {
-	position: relative;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	top: 460px;
-	height: 50px;
-	background-color: rgba(0,0,0,0.4);
-}
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	background-image: url(images/bg.png);
-	margin: 100px 0px;
-	padding: 0px;
-	text-align: center;
-	background-attachment: fixed;
-}
-#topMenu {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-image: url(images/topMenuBg1.jpg);
-	z-index: 1;
-	height: 87px;
-	vertical-align: middle;
-}
-.imageNum {
-	display: inline-block;
-	color: #FFF;
-	font-size: 36px;
-	float: left;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-.imageName {
-	display: inline-block;
-	color: #FFF;
-	font-size: 20px;
-	text-align: center;
-	margin-top: 12px;
-}
-.smashing {
-	position: fixed;
-	z-index: 1;
-	top: 10px;
-	left: 200px;
-}
-.topProfile {
-	position: fixed;
-	top: 0px;
-	right: 200px;
-	height: 32px;
-	background-color: rgba(255,255,255,0.2);
-	padding: 5px;
-	z-index: 1;
-}
-.topProfileImage {
-	width: 35px;
-	height: 35px;
-	margin: 0 auto 40px;
-	float: left;
-}
-.topProfileName {
-	display: inline-block;
-	color: #FFF;
-	font-size: 20px;
-	text-align: center;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-#button {
-	margin: 20px 0 0 0;
-	padding: 15px 8px;
-	width: 200px;
-	cursor: pointer;
-	border: 1px solid #2493FF;
-	overflow: visible;
-	display: inline-block;
-	color: #fff;
-	font: bold 1.4em arial, helvetica;
-	text-shadow: 0 -1px 0 rgba(0,0,0,.4);
-	background-color: #2493ff;
-	background-image: linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
-	transition: background-color .2s ease-out;
-	border-radius: 3px;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .5) inset;
-}
-#button:hover {
-	background-color: #7cbfff;
-	border-color: #7cbfff;
-}
-#button:active {
-	position: relative;
-	top: 3px;
-	text-shadow: none;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
-}
-.register input[placeholder] {
-	margin: 5px 0;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	font-size: 20px;
-}
-.register input[placeholder]:focus {
-	outline: 0;
-	border-color: #aaa;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
-}
-.register select {
-	margin: 5px 0;
-	padding: 10px;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	font-size: 20px;
-}
-.register span {
-	font-size: 20px
-}
-.register br {
- font-size:
-}
-</style>
+     <link rel="stylesheet" type="text/css" href="..\css/registerStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<div id="topMenu"><img src="images/logo.png" style="margin-top:20px" /></div>
-
+<div id="topMenu" style="">Pretty In The City</div>
 <!-- errors & messages --->
 <?php
 
@@ -193,11 +59,14 @@ function setValues(tag){
         }
 }
 </script>
+    <div style="height: 110px"></div>
+    <div class="mainTitle">Pretty In The City</div>
+    <div class="mainTitle" style="font-size: 40px">Mirror, mirror on the wall, <br /> who's prettiest of them all?</div>
 <!-- register form -->
-<form method="post" action="register.php" name="registerform" class="register" style="float:left; width:500px">
+<form method="post" action="register.php" name="registerform" class="register" style="float:left; width:500px; display: none;">
   
   <!-- the user name input field uses a HTML5 pattern check --> 
-  <img src="images/signup.png" /> <br />
+  <img alt="signup" src="images/signup.png" /> <br />
   <input id="login_input_firstname" class="register" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_first_name" placeholder="First Name" size="15" style="margin-right:15px" required />
   <input id="login_input_lastname" type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_last_name" placeholder="Last Name" size="15" required />
   <br />
@@ -392,8 +261,8 @@ function setValues(tag){
   <input id="button" type="submit" onclick="return saveForm()" name="register" value="Register" value="Sign Up" />
 </form>
 <script>loadForm()</script>
-<img src="images/prettyImage.png" /> <a href="#">
-<div class="topProfile"><!-- login form box -->
+<div style="display: none"  class="topProfile">
+    <!-- login form box -->
 <form method="post" action="index.php" name="loginform">
     <label for="login_input_email">Email</label>
     <input id="login_input_email" class="login_input" type="text" name="user_email" required />
